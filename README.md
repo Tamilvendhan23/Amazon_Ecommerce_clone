@@ -1,4 +1,4 @@
-# JVL cart
+# Swift cart
 
 an E-commerce Website built with MERN stack.
 
@@ -18,7 +18,7 @@ after that open the backend/config/config.env
 and update the MongoDB connection string
 ```bash
 ...
-DB_LOCAL_URI=mongodb://localhost:27017/jvlcart
+DB_LOCAL_URI=mongodb://localhost:27017/Ur_folder
 ```
 
 navigate back to "root" folder and run this command for loading demo data
@@ -33,10 +33,10 @@ npm run prod
 
 
 ## Test
-open the http://localhost:8000 and test the 
+open the http://localhost:8000 and test  
 
 ## Postman Collection
-https://www.postman.com/jvlcode/workspace/nodejs-ecommerce/collection/19530322-997cf450-820a-4852-bc1f-a93c9072d6ec?action=share&creator=19530322
+https://web.postman.co/workspace/My-Workspace~1b472528-29ec-4a2a-8723-543ffc832d9b/collection/40792383-e0630981-7f5d-4cbd-9de0-c84fbc0f5ad9?action=share&source=copy-link&creator=40792383&active-environment=f3ccb8a6-d5df-425f-99e1-64758050a612
 
 
 ## License
