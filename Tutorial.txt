@@ -1,0 +1,27 @@
+1.setup folders and install mern stack
+2.install needed modules in npm
+3.npm i express dotenv magoose
+4. before that ,install mongodb comunity server, i changed the location of the software ,i installed on D drive
+5.some issue encounter while install and setup the manogodb 
+            step 1: set environment variable
+            step 2: put commond  (mongod --dbpath="D:\Program Files\MongoDB\Server\8.0\data\db")
+6. in mongodb compass ,goto new connection and add new and name it as (local manogodb  connection) save and connect it
+7.similarly download MongoDBshell software,extract the files where the manogdb located (or ur wish),and set environment variable ,open terminal ,type: mongosh get connection uri 
+8.open postman api software check the request work correct.  ( for common url create new environment and name it i as development)
+9.add variable as base url and put the common head(http://localhost:8000)
+10.and check like ({{base_url}}/api/v1/products)
+11.npm i nodemon --save-dev (for auto run when save the file)
+12.edit script to run the project, add start ,dev,production actions..
+
+we can run the custom commands by using (eg: npm run dev)
+
+create product module and controllers, product module is for get the data from schema with custom desired
+check everything in postman api for (api working status)
+13. create utile folder for error handling, when the  env in production it shows just error, where as in development it give detailed error message.. 
+
+14.for await(async) it gives promise statement, we need to handle the error by 
+15. adding search function for products and accessaries, form utiles-- creating apifeatures file on utiles folder.
+
+16.create userModel for user authentication,form npm modules,get the jwt=json web token, for create the screate key for user,
+17.password must be in hashing ,that encrypt the real password,
+17.create auth for user authentication,login and prevent explict pages by nomarl user.
