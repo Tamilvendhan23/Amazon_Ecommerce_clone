@@ -15,7 +15,8 @@ npm run build
 ```
 wait for application build
 after that open the backend/config/config.env
-and update the MongoDB connection string
+and update the MongoDB connection string,
+update config env placeholders
 ```bash
 ...
 DB_LOCAL_URI=mongodb://localhost:27017/Ur_folder
