@@ -25,3 +25,4 @@ check everything in postman api for (api working status)
 16.create userModel for user authentication,form npm modules,get the jwt=json web token, for create the screate key for user,
 17.password must be in hashing ,that encrypt the real password,
 17.create auth for user authentication,login and prevent explict pages by nomarl user.
+18.
