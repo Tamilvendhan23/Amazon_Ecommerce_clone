@@ -16,7 +16,9 @@ const sendEmail = async options => {
         from: `${process.env.SMTP_FROM_NAME} <${process.env.SMTP_FROM_EMAIL}>`,
         to: options.email,
         subject: options.subject,
-        text: options.message
+        text: options.message // body of tmail
+        // mail structure @authconfiguration.
+
     }
 
    await transporter.sendMail(message)
