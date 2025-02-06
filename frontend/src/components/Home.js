@@ -12,15 +12,15 @@ export  default function Home(){
     const {products, loading, error, productsCount, resPerPage} =    useSelector((state) => state.productsState)
     const [currentPage, setCurrentPage] = useState(1);
  
-    const setCurrentPageNo = (pageNo) =>{
+    const setCurrentPageNo = (pageNo) => {
 
-        setCurrentPage(pageNo)
-       
+        setCurrentPage(pageNo)  
     }
 
     useEffect(()=>{
         if(error) {
             return toast.error(error,{
+                // toast is used for show notification on page
                 position: toast.POSITION.BOTTOM_CENTER
             })
         }
