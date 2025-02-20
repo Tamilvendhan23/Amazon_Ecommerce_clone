@@ -5,6 +5,7 @@ import { getAdminProducts } from "../../actions/productActions";
 import {getUsers} from '../../actions/userActions'
 import {adminOrders as adminOrdersAction} from '../../actions/orderActions'
 import { Link } from "react-router-dom";
+import MetaData from "../layouts/MetaData";
 
 export default function Dashboard () {
     const { products = [] } = useSelector( state => state.productsState);
@@ -12,7 +13,6 @@ export default function Dashboard () {
     const { users = [] } = useSelector( state => state.userState);
     const dispatch = useDispatch();
     let outOfStock = 0;
-
     if (products.length > 0) {
         products.forEach( product => {
             if( product.stock === 0  ) {
@@ -38,7 +38,9 @@ export default function Dashboard () {
 
 
     return (
+
         <div className="row">
+             <MetaData title={'Dashboard'} />
             <div className="col-12 col-md-2">
                     <Sidebar/>
             </div>

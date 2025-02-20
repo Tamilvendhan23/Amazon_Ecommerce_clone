@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
+import MetaData from "../layouts/MetaData";
 
 export default function CheckoutSteps({shipping, confirmOrder, payment}) {
     return (
-
+        
         <div className="checkout-progress d-flex justify-content-center mt-5">
+            
+            <MetaData title={'Shipping Info'} />   
             {
             shipping ?
             <Link to="/shipping">

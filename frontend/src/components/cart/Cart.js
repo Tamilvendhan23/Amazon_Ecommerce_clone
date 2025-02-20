@@ -2,6 +2,7 @@ import { Fragment } from 'react'
 import {useDispatch, useSelector} from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { decreaseCartItemQty, increaseCartItemQty,removeItemFromCart } from '../../slices/cartSlice';
+import MetaData from '../layouts/MetaData';
 
 export default function Cart() {
     const {items } = useSelector(state => state.cartState)
@@ -26,6 +27,8 @@ export default function Cart() {
 
     return (
         <Fragment>
+            
+            <MetaData title={'Cart'} />   
             {items.length==0 ? 
                 <h2 className="mt-5">Your Cart is Empty</h2> :
                 <Fragment>

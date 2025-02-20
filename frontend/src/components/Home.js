@@ -43,7 +43,7 @@ export  default function Home(){
                         </div>
                     </section>
                     {productsCount > 0 && productsCount > resPerPage?
-                    <div className="d-flex justify-content-center mt-5">
+                    <div className="d-flex justify-content-center pagination mt-5">
                            <Pagination 
                                 activePage={currentPage}
                                 onChange={setCurrentPageNo}

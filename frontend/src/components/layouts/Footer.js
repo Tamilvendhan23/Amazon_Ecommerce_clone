@@ -1,9 +1,10 @@
 export  default function Footer (){
     return (
-        <footer className="py-1">
-            <p className="text-center text-dark mt-1">
-                JVLcart - 2022-2023, All Rights Reserved
+        <footer  className="footer" >
+            <p className="text-center b text-white mt-1">
+             Swiftcart - {new Date().getFullYear()} All Rights Reserved
             </p>
+
         </footer>
     )
 }

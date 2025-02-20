@@ -51,6 +51,8 @@ function App() {
   },[])
 
   return (
+    <div>
+      <div>
     <Router>
       <div className="App">
         <HelmetProvider>
@@ -90,10 +92,15 @@ function App() {
                   <Route path='/admin/user/:id' element={ <ProtectedRoute isAdmin={true}><UpdateUser/></ProtectedRoute> } />
                   <Route path='/admin/reviews' element={ <ProtectedRoute isAdmin={true}><ReviewList/></ProtectedRoute> } />
                 </Routes>
-            <Footer/>
+                
         </HelmetProvider>
       </div>
     </Router>
+    </div>
+          <div style={{marginTop: '60px'}}>
+          <Footer/> 
+          </div>
+        </div>
   );
 }
 

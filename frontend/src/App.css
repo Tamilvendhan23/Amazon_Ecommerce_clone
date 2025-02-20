@@ -114,11 +114,17 @@ nav {
 }
 
 /* Footer */
-footer {
-  margin-top: 8rem;
-  color: grey;
+footer { 
   bottom: 0;
-  width: 100%;
+  width: 100%; 
+  position: fixed;
+
+  left: 0;
+  width: 100%;  
+  padding: 10px; 
+  background-color: #232f3e;  
+  z-index: 222;
+  margin-top: 100px;
 }
 
 /* Ratings */
@@ -467,9 +473,10 @@ footer {
 }
 
 /* Pagination */
+ 
 .page-item.active .page-link {
   background-color: #fa9c23;
-  border-color: #fa9c23;
+  border-color: #fa9c23; 
 }
 
 .page-link {
